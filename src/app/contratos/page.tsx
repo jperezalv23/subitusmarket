@@ -182,16 +182,15 @@ export default function MyJobsComponent() {
             <div key={job.jobId} className="border p-4 rounded-lg shadow">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <p><strong>Job ID:</strong> {job.jobId}</p>
-                  <p><strong>Client:</strong> {job.client}</p>
-                  <p><strong>Worker:</strong> {job.worker}</p>
-                  <p><strong>Amount:</strong> {formatAvax(job.amount)} AVAX</p>
+                  <p><strong>ID:</strong> {job.jobId}</p>
+                  <p><strong>Cliente:</strong> {job.client}</p>
+                  <p><strong>Precio:</strong> {formatAvax(job.amount)} AVAX</p>
                 </div>
                 <div>
-                  <p><strong>Created:</strong> {formatDate(job.createdAt)}</p>
-                  <p><strong>Deadline:</strong> {formatDate(job.deadline)}</p>
-                  <p><strong>Status:</strong> {job.isPaid ? "Paid" : "Pending"}</p>
-                  <p><strong>Work confirmed:</strong> {job.workConfirmed ? "Yes" : "No"}</p>
+                  <p><strong>Creado:</strong> {formatDate(job.createdAt)}</p>
+                  <p><strong>Fecha Limite:</strong> {formatDate(job.deadline)}</p>
+                  <p><strong>Estado:</strong> {job.isPaid ? "Pagado" : "Pendiente"}</p>
+                  <p><strong>¿Aceptado?:</strong> {job.workConfirmed ? "Si" : "No"}</p>
                 </div>
               </div>
 
