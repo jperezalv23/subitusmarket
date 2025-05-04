@@ -4,6 +4,8 @@ import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
 import thirdwebIcon from "@public/thirdweb.svg";
 import { client } from "./client";
+import Inventory from "./components/inventory";
+
 
 export default function Home() {
   return (
@@ -21,7 +23,8 @@ export default function Home() {
           />
         </div>
 
-        <ThirdwebResources />
+        <Inventory />
+
       </div>
     </main>
   );
@@ -40,18 +43,8 @@ function Header() {
       />
 
       <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        thirdweb SDK
-        <span className="text-zinc-300 inline-block mx-1"> + </span>
-        <span className="inline-block -skew-x-6 text-blue-500"> Next.js </span>
+        Inventario Pablito
       </h1>
-
-      <p className="text-zinc-300 text-base">
-        Read the{" "}
-        <code className="bg-zinc-800 text-zinc-300 px-2 rounded py-1 text-sm mx-1">
-          README.md
-        </code>{" "}
-        file to get started.
-      </p>
     </header>
   );
 }
