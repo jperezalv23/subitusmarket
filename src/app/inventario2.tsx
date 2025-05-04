@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { readContract } from 'thirdweb';
 import { contract } from './contract'; // adjust path if needed
 import { useActiveWallet } from 'thirdweb/react';
-import { addProduct, getAllProducts } from "../lib/products"; 
+import { addProduct, getAllProducts } from "../db/products"; 
 
 interface Item {
   name: string;

@@ -1,59 +1,86 @@
+# 💼 SkillMatch
 
-![tw-banner](https://github.com/thirdweb-example/next-starter/assets/57885104/20c8ce3b-4e55-4f10-ae03-2fe4743a5ee8)
+SkillMatch es una **dApp (aplicación descentralizada)** diseñada para conectar talentos con personas interesadas en contratar sus servicios. Utiliza la tecnología **blockchain** de Avalanche para registrar contratos, confirmar trabajos y manejar pagos de forma segura y sin intermediarios.
 
-# thirdweb-next-starter
+---
 
-Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [next](https://nextjs.org/).
+## 🧐 Descripción del Problema
 
-## Installation
+En el mercado actual, contratar servicios profesionales puede ser complicado debido a la falta de confianza, la intervención de intermediarios costosos y la ausencia de mecanismos seguros para manejar pagos. SkillMatch aborda este problema proporcionando una plataforma descentralizada que:
+- Elimina intermediarios, reduciendo costos.
+- Garantiza la seguridad de los pagos mediante contratos inteligentes.
+- Fomenta la transparencia con un mecanismo básico de reputación.
 
-Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
+---
 
-```bash
-  npx thirdweb create app --next
-```
+## 🌐 ¿Cómo Utiliza Avalanche?
 
-## Environment Variables
+SkillMatch aprovecha el ecosistema de Avalanche de la siguiente manera:
+- **Contratos inteligentes en la C-Chain:** Registra los acuerdos laborales y gestiona pagos de forma inmutable.
+- **Pagos en AVAX:** Facilita transacciones rápidas y económicas utilizando la moneda nativa de Avalanche.
+- **Ecosistema thirdweb:** Simplifica la integración de wallets y transacciones on-chain.
 
-To run this project, you will need to add the following environment variables to your .env file:
+---
 
-`CLIENT_ID`
+## ✨ Características
 
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
+- Registro de profesionales mediante wallet.
+- Creación de contratos de trabajo on-chain.
+- Pago seguro en AVAX (directamente a smart contracts).
+- Confirmación de trabajos por ambas partes.
+- Solicitud de reembolso si el trabajo no se completa a tiempo.
+- Mecanismo básico de reputación basado en confirmaciones.
 
-## Run locally
+---
 
-Install dependencies
+## 🛠️ Tecnologías Utilizadas
 
-```bash
-yarn
-```
+- **Solidity:** Desarrollo de contratos inteligentes.
+- **Avalanche C-Chain:** Red blockchain compatible con EVM.
+- **thirdweb:** Integración de wallets y gestión de transacciones.
+- **Ethers.js / Web3:** Interacción con la blockchain.
+- **Next.js:** Creación de la interfaz de usuario.
 
-Start development server
+---
 
-```bash
-yarn dev
-```
+## 🚀 ¿Cómo Funciona?
 
-Create a production build
+### Para Clientes:
+1. Conectan su wallet.
+2. Buscan un profesional adecuado.
+3. Crean un trabajo mediante un pago en AVAX.
+4. Confirman la entrega del trabajo cuando el profesional termina.
+5. El pago se libera automáticamente al profesional.
 
-```bash
-yarn build
-```
+### Para Profesionales:
+1. Registran su wallet en la plataforma.
+2. Reciben solicitudes de trabajo.
+3. Realizan el trabajo solicitado.
+4. Reciben el pago una vez que el cliente valida la entrega.
 
-Preview the production build
+---
+## ⚙️ Instalación
 
-```bash
-yarn start
-```
+Sigue estos pasos para clonar y ejecutar el proyecto localmente:
 
-## Resources
+1. **Clonar el repositorio**
 
-- [Documentation](https://portal.thirdweb.com/typescript/v5)
-- [Templates](https://thirdweb.com/templates)
-- [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
+   ```bash
+   git clone https://github.com/jperezalv23/subitusmarket.git
+   cd subitusmarket
 
-## Need help?
+2. **Instalar dependencias**
+    ```bash
+    npm i  
 
-For help or feedback, please [visit our support site](https://thirdweb.com/support)
+3. **Cambiar variables de entorno**
+
+    Para ejecutar este proyecto, debes cambiar la sigueinte variable de entorno en el .env
+
+   `CLIENT_ID` 
+
+
+4. **Inicia el servidor de desarrollo**
+    ```bash
+    npm run dev
+

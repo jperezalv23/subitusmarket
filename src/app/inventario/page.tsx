@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { readContract } from 'thirdweb';
 import { contract } from '../contract'; // adjust path if needed
 import { useActiveWallet } from 'thirdweb/react';
-import { addProduct, getAllProducts } from "../../lib/products"; 
+import { addProduct, getAllProducts } from "../../db/products"; 
 import NavigateButton from '../components/NavigateButton'; // Adjust the import path as needed
 import ViewCurrentStock from '../components/ViewCurrentStock'; // Adjust the import path as needed
 interface Item {

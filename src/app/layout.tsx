@@ -8,9 +8,9 @@ import Header from "./components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "thirdweb SDK + Next starter",
+  title: "SkillMatch",
   description:
-    "Starter template for using thirdweb SDK with Next.js App router",
+    "Conectamos soluciones con problemas",
 };
 
 export default function RootLayout({

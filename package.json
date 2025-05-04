@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-popover": "^1.1.11",
     "@thirdweb-dev/react": "^4.9.4",
+    "clsx": "^2.1.1",
+    "components": "^0.1.0",
+    "date-fns": "^4.1.0",
     "ethers": "^6.13.7",
+    "lib": "^5.1.0",
+    "lucide-react": "^0.507.0",
     "mongoose": "^8.14.1",
     "next": "14.1.0",
     "react": "^18.3",
