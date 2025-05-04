@@ -4,7 +4,7 @@ import { avalancheFuji } from "thirdweb/chains";
 import abi from "./abi.json";
 
 // Dirección del contrato desplegado (reemplaza con tu propia dirección)
-const CONTRACT_ADDRESS = "0x0D2F07B71B6222902ef9a8157ADeCa6EbBEE04b6";
+export const CONTRACT_ADDRESS = "0x1053be1BFFa4B1e7450b96fF86047Df68C8dd150";
 
 
 export const contract = getContract({

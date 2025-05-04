@@ -29,7 +29,7 @@ export default function Home() {
         </button>
 
         </div>
-        
+        <Inventory/>
 
       </div>
     </main>
