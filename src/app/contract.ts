@@ -14,4 +14,3 @@ export const contract = getContract({
   abi: abi, // ABI del contrato
 });
 
-

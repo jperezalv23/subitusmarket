@@ -5,7 +5,7 @@ import { ConnectButton } from "thirdweb/react";
 import thirdwebIcon from "@public/thirdweb.svg";
 import { client } from "./client";
 import Inventory from "./components/inventory";
-
+import { useRouter } from 'next/navigation'; // ✅ App Router
 
 export default function Home() {
   return (
@@ -22,8 +22,12 @@ export default function Home() {
             }}
           />
         </div>
-
-        <Inventory />
+        <div className="flex gap-4">
+        <button onClick={() => router.push('/inventario')} className="button">
+          Ver inventario
+        </button>
+        </div>
+        
 
       </div>
     </main>
