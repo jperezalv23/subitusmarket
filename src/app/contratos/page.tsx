@@ -157,6 +157,10 @@ export default function MyJobsComponent() {
   const formatAvax = (amount) => {
     return Number(amount) / 1e18; // Asumiendo que el amount está en wei
   };
+  function formatId(worker: string, length: number = 8): string {
+    const prefix = worker.slice(0, length);
+    return `(${prefix})...`;
+  }
 
   if (!wallet) {
     return <div className="p-4">Por favor conecta tu billetera para ver tus trabajos</div>;
@@ -183,7 +187,8 @@ export default function MyJobsComponent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <p><strong>ID:</strong> {job.jobId}</p>
-                  <p><strong>Cliente:</strong> {job.client}</p>
+                  <p><strong>Cliente:</strong> {job.client == walletAddress ? "Tu " + formatId(job.client) : job.client}</p>
+                  <p><strong>Colaborador:</strong> {job.worker == walletAddress ? "Tu " + formatId(job.worker) : job.worker}</p>
                   <p><strong>Precio:</strong> {formatAvax(job.amount)} AVAX</p>
                 </div>
                 <div>
